@@ -3,93 +3,165 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abdullah Mehmood Khichi | Portfolio</title>
-<meta name="description" content="Portfolio of Abdullah Mehmood Khichi, Business Analytics &amp; IT senior at Rutgers Business School.">
+<title>Abdullah Mehmood Khichi | Business Analytics &amp; IT Portfolio</title>
+<meta name="description" content="Portfolio of Abdullah Mehmood Khichi, a Business Analytics &amp; IT senior at Rutgers Business School interested in financial analysis, data analytics, and entrepreneurship.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="#top">Abdullah Mehmood Khichi</a>
-    <nav aria-label="Main">
-      <ul>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="monogram" aria-hidden="true">AMK</span>
+      <span class="brand-name">Abdullah Mehmood Khichi</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/abdullahmehmood171">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
       </ul>
     </nav>
   </div>
 </header>
-<main id="main">
-  <div class="hero" id="top">
-    <div class="wrap">
-      <p class="eyebrow">Business Analytics &amp; IT · Rutgers Business School</p>
-      <h1>Abdullah Mehmood Khichi</h1>
-      <p class="lead" id="about">I am a Business Analytics &amp; IT senior at Rutgers Business School with startup co-founding experience and an interest in financial analysis, data analytics, and entrepreneurship.</p>
-      <a class="btn primary" href="#projects">View projects</a>
-      <a class="btn" href="https://github.com/abdullahmehmood171">GitHub profile</a>
-    </div>
-  </div>
 
-  <section id="skills" aria-labelledby="skills-h">
-    <div class="wrap">
-      <h2 id="skills-h">Skills</h2>
-      <p class="intro">Skill levels are stated honestly: several are foundational, from coursework or early self-study.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Financial analysis</h3>
-          <ul>
-            <li>Excel: pivot tables, XLOOKUP, charts</li>
-            <li>Financial statement analysis</li>
+<main id="main">
+  <section class="hero" id="about" aria-labelledby="page-title">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Business Analytics &amp; IT · Rutgers Business School</p>
+        <h1 id="page-title">Abdullah Mehmood Khichi</h1>
+        <p class="statement">I am a Business Analytics &amp; IT senior at Rutgers Business School with startup co-founding experience and an interest in financial analysis, data analytics, and entrepreneurship.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#projects">Explore projects
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+          <a class="button button-secondary" href="https://github.com/abdullahmehmood171">GitHub profile</a>
+        </div>
+      </div>
+
+      <aside class="interest-panel" aria-label="Areas of interest">
+        <p class="panel-title">Areas of interest</p>
+        <ul class="interest-list">
+          <li>
+            <span class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 16V10M10 16V6M14 16v-4M18 16V8"/></svg></span>
+            <div><strong>Finance</strong><span>Financial statements and how bond prices respond to interest rates</span></div>
+          </li>
+          <li>
+            <span class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg></span>
+            <div><strong>Analytics</strong><span>Excel, SQL, Python with Pandas, and Tableau</span></div>
+          </li>
+          <li>
+            <span class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 2.5 4.5 6 4.5 9.5L12 17l-4.5-4.5C7.5 9 9 5.5 12 3Z"/><circle cx="12" cy="10" r="1.6"/><path d="M8.5 15.5 6 18l.5-3M15.5 15.5 18 18l-.5-3"/></svg></span>
+            <div><strong>Entrepreneurship</strong><span>Business co-founder of Triptic, 2025–2026</span></div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="skills-title">Skills</h2>
+        <p>Tools and practices from Rutgers coursework, self-study, and startup work.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 16V10M10 16V6M14 16v-4M18 16V8"/></svg>Finance &amp; reporting</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Financial statement analysis</span></li>
+            <li><span class="skill-name">Excel<span class="skill-detail">Pivot tables, XLOOKUP, charts</span></span></li>
           </ul>
         </div>
-        <div class="card">
-          <h3>Data &amp; analytics</h3>
-          <ul>
-            <li>SQL: basic, from coursework</li>
-            <li>Python and Pandas: basic</li>
-            <li>Tableau: beginner</li>
+        <div class="skill-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="2.5"/><path d="M5 6v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6M5 12v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6"/></svg>Data &amp; analytics</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">SQL</span><span class="skill-level">Basic</span></li>
+            <li><span class="skill-name">Python and Pandas</span><span class="skill-level">Basic</span></li>
+            <li><span class="skill-name">Tableau</span><span class="skill-level">Beginner</span></li>
           </ul>
         </div>
-        <div class="card">
-          <h3>Presentation &amp; venture work</h3>
-          <ul>
-            <li>PowerPoint and pitch presentations</li>
-            <li>Customer discovery and pitching</li>
-            <li>Social media and waitlist management</li>
-            <li>Coordinating prototype development</li>
+        <div class="skill-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg>Business &amp; communication</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">PowerPoint and pitch presentations</span></li>
+            <li><span class="skill-name">Customer discovery and pitching</span></li>
+            <li><span class="skill-name">Social media and waitlist management</span></li>
+            <li><span class="skill-name">Coordinating prototype development</span></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="alt" aria-labelledby="projects-h">
-    <div class="wrap">
-      <h2 id="projects-h">Projects</h2>
-      <p class="intro">Two entries: one in-progress self-study analysis and one concluded startup venture.</p>
-      <div class="grid">
-        <article class="card">
-          <span class="tag wip">In progress — self-study</span>
-          <h3>Bond Duration &amp; Interest-Rate Analysis</h3>
-          <p class="meta">Summer 2026</p>
-          <p>An Excel analysis of Treasuries and corporate bonds: duration calculated for each, then simple +100 and −100 basis-point rate shocks to estimate price changes. The MBS component and credit stress testing are not finished.</p>
-          <p><a href="projects/bond-duration.html">Project overview</a></p>
+  <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="projects-title">Projects</h2>
+        <p>A self-study analysis of interest-rate risk, and my business-side work as co-founder of an early-stage startup.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project" aria-labelledby="bond-title">
+          <div>
+            <p class="status status-progress">In progress · Self-study</p>
+            <h3 id="bond-title">Bond Duration &amp; Interest-Rate Analysis</h3>
+            <p class="project-meta">Independent self-study · Started summer 2026</p>
+            <p>An Excel-based self-study analysis exploring how Treasury and corporate bond prices respond to interest-rate changes through duration calculations and ±100-basis-point scenarios.</p>
+            <p class="skills-used"><strong>Skills applied:</strong> Excel, financial analysis, interest-rate scenario analysis</p>
+            <a class="project-link" href="projects/bond-duration.html">Read the bond analysis case study
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+          </div>
+          <figure class="diagram">
+            <ol class="flow">
+              <li><div><strong>Bond inputs</strong><span>Treasuries and corporate bonds</span></div></li>
+              <li><div><strong>Duration</strong><span>Calculated for each bond</span></div></li>
+              <li><div><strong>Rate scenarios</strong><span>+100 bp and −100 bp shocks</span></div></li>
+              <li><div><strong>Estimated price change</strong><span>Under each scenario</span></div></li>
+            </ol>
+            <figcaption>Analysis workflow. A process outline, not project results.</figcaption>
+          </figure>
         </article>
-        <article class="card">
-          <span class="tag">Concluded · prototype stage</span>
-          <h3>Triptic — College Counseling Startup</h3>
-          <p class="meta">Business Co-Founder · November 2025–August 2026</p>
-          <p>Business-side work on a college counseling venture: pitching, talking with counselors and students, building the pitch deck, running Instagram and the waitlist, and managing the interns who built the prototype. It did not launch commercially.</p>
-          <p><a href="projects/triptic.html">Project overview</a></p>
+
+        <article class="project" aria-labelledby="triptic-title">
+          <div>
+            <p class="status">Concluded · Prototype stage</p>
+            <h3 id="triptic-title">Triptic — Business Development &amp; Customer Discovery</h3>
+            <p class="project-meta">Business Co-Founder · November 2025–August 2026</p>
+            <p>Business and outreach work for a college counseling startup: conversations with counselors and students, pitching and the pitch deck, Instagram and the waitlist, and managing the interns who built the prototype.</p>
+            <p class="skills-used"><strong>Skills applied:</strong> customer discovery, pitching, PowerPoint, social media, waitlist management, prototype coordination</p>
+            <a class="project-link" href="projects/triptic.html">Read the Triptic case study
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+          </div>
+          <figure class="diagram">
+            <div class="role-map">
+              <div class="role-core">Business co-founder<span>Business and outreach work</span></div>
+              <ul class="role-branches">
+                <li><strong>Discovery</strong>Counselors and students</li>
+                <li><strong>Pitching</strong>Pitch and pitch deck</li>
+                <li><strong>Outreach</strong>Instagram and waitlist</li>
+                <li><strong>Prototype</strong>Managing the intern team</li>
+              </ul>
+            </div>
+            <figcaption>Overview of my role, drawn for this portfolio.</figcaption>
+          </figure>
         </article>
       </div>
     </div>
   </section>
 </main>
-<footer>
-  <div class="wrap">© 2026 Abdullah Mehmood Khichi · <a href="https://github.com/abdullahmehmood171">GitHub</a></div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-name">Abdullah Mehmood Khichi</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/abdullahmehmood171">GitHub profile</a></li>
+      <li><a href="https://github.com/abdullahmehmood171/abdullahmehmood171.github.io">Website source</a></li>
+    </ul>
+  </div>
 </footer>
 </body>
 </html>

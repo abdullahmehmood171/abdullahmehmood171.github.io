@@ -4,48 +4,124 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bond Duration &amp; Interest-Rate Analysis | Abdullah Mehmood Khichi</title>
+<meta name="description" content="Case study: an in-progress Excel self-study on how Treasury and corporate bond prices respond to interest-rate changes.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="../index.html">Abdullah Mehmood Khichi</a>
-    <nav aria-label="Main">
-      <ul>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <span class="monogram" aria-hidden="true">AMK</span>
+      <span class="brand-name">Abdullah Mehmood Khichi</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../index.html#skills">Skills</a></li>
-        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#projects" aria-current="page">Projects</a></li>
+        <li><a href="https://github.com/abdullahmehmood171">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
       </ul>
     </nav>
   </div>
 </header>
+
 <main id="main">
-<article class="page">
-  <p><a href="../index.html#projects">← Back to projects</a></p>
-  <span class="tag wip">In progress — self-study</span>
-  <h1>Bond Duration &amp; Interest-Rate Analysis</h1>
-  <p class="meta">Summer 2026</p>
+  <div class="case-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li aria-current="page">Bond Duration &amp; Interest-Rate Analysis</li>
+        </ol>
+      </nav>
+      <p class="status status-progress">In progress · Self-study</p>
+      <h1>Bond Duration &amp; Interest-Rate Analysis</h1>
+      <p class="case-lede">An Excel-based self-study analysis exploring how Treasury and corporate bond prices respond to interest-rate changes through duration calculations and ±100-basis-point scenarios.</p>
+      <dl class="facts">
+        <div><dt>Type</dt><dd>Independent self-study</dd></div>
+        <div><dt>Started</dt><dd>Summer 2026</dd></div>
+        <div><dt>Status</dt><dd>In progress</dd></div>
+        <div><dt>Tool</dt><dd>Microsoft Excel</dd></div>
+      </dl>
+    </div>
+  </div>
 
-  <h2>Overview</h2>
-  <p>A self-study project on how bond prices respond to changes in interest rates. It is still in progress and is not a completed project.</p>
+  <div class="container case-layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#work">Work completed so far</a></li>
+        <li><a href="#workflow">Analysis workflow</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#status">Status and next steps</a></li>
+      </ol>
+    </nav>
 
-  <h2>What has been done</h2>
-  <ul>
-    <li>Set up an Excel sheet covering Treasuries and corporate bonds.</li>
-    <li>Calculated duration for each bond.</li>
-    <li>Ran simple +100 and −100 basis-point interest-rate shocks to estimate price changes.</li>
-  </ul>
+    <div class="case-content">
+      <section class="case-section" id="objective" aria-labelledby="objective-h">
+        <h2 id="objective-h">Objective</h2>
+        <p>I started this project to build a practical understanding of interest-rate risk: how much bond prices move when rates change, and how that sensitivity differs across Treasuries and corporate bonds. Duration is the core measure I am using to study it.</p>
+      </section>
 
-  <h2>Not yet done</h2>
-  <ul>
-    <li>The mortgage-backed securities (MBS) component.</li>
-    <li>Credit stress testing.</li>
-  </ul>
+      <section class="case-section" id="work" aria-labelledby="work-h">
+        <h2 id="work-h">Work completed so far</h2>
+        <ul>
+          <li>Set up an Excel sheet covering Treasuries and corporate bonds.</li>
+          <li>Calculated duration for each bond.</li>
+          <li>Applied simple +100 and −100 basis-point interest-rate shocks to estimate price changes.</li>
+        </ul>
+      </section>
 
-  <div class="note">This page summarizes the work only. It does not include the underlying holdings, results, or a downloadable workbook.</div>
-</article>
+      <section class="case-section" id="workflow" aria-labelledby="workflow-h">
+        <h2 id="workflow-h">Analysis workflow</h2>
+        <p>The analysis follows four steps, from the bonds in the sheet to an estimated price change under each rate scenario.</p>
+        <figure class="diagram">
+          <ol class="flow flow-wide">
+            <li><div><strong>Bond inputs</strong><span>Treasuries and corporate bonds in Excel</span></div></li>
+            <li><div><strong>Duration</strong><span>Calculated for each bond</span></div></li>
+            <li><div><strong>Rate scenarios</strong><span>+100 bp and −100 bp shocks</span></div></li>
+            <li><div><strong>Estimated price change</strong><span>For each bond under each scenario</span></div></li>
+          </ol>
+          <figcaption>Process outline drawn for this page. It does not show holdings or results.</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" id="tools" aria-labelledby="tools-h">
+        <h2 id="tools-h">Tools</h2>
+        <ul>
+          <li><strong>Microsoft Excel</strong> for the bond sheet, duration calculations, and rate scenarios.</li>
+          <li><strong>Concepts:</strong> bond duration, basis-point rate shocks, and interest-rate sensitivity.</li>
+        </ul>
+      </section>
+
+      <section class="case-section" id="status" aria-labelledby="status-h">
+        <h2 id="status-h">Current status and next steps</h2>
+        <div class="status-panel">
+          <p><strong>In progress.</strong> The duration calculations and ±100-basis-point scenarios for Treasuries and corporate bonds are set up. The broader project is unfinished: planned extensions to mortgage-backed securities (MBS) and credit stress testing were not completed.</p>
+          <p>Next, I plan to finalize and document the Treasury and corporate-bond analysis, then add its methodology and results to this page.</p>
+        </div>
+      </section>
+
+      <nav class="case-nav" aria-label="Project navigation">
+        <a href="../index.html#projects">← All projects</a>
+        <a href="triptic.html">Next: Triptic case study →</a>
+      </nav>
+    </div>
+  </div>
 </main>
-<footer><div class="wrap">© 2026 Abdullah Mehmood Khichi · <a href="../index.html">Home</a></div></footer>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-name">Abdullah Mehmood Khichi</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/abdullahmehmood171">GitHub profile</a></li>
+      <li><a href="https://github.com/abdullahmehmood171/abdullahmehmood171.github.io">Website source</a></li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>

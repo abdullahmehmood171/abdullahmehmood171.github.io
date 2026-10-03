@@ -1,15 +1,23 @@
 # Abdullah Mehmood Khichi — Portfolio
 
-Static personal portfolio, plain HTML/CSS, no build step. Live at https://abdullahmehmood171.github.io
+Personal portfolio website, built with plain HTML and CSS (no framework, no build step, no JavaScript) and hosted on GitHub Pages.
+
+**Live site:** https://abdullahmehmood171.github.io
 
 ## Structure
-- `index.html` — name, statement, Skills, Projects
-- `projects/bond-duration.html`, `projects/triptic.html` — project overviews
-- `styles.css` — all styling (colors are variables at the top of the file)
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Homepage: introduction, skills, projects |
+| `projects/bond-duration.html` | Bond Duration & Interest-Rate Analysis case study |
+| `projects/triptic.html` | Triptic case study |
+| `styles.css` | All styling; colors and widths are variables at the top |
+| `favicon.svg` | AMK monogram icon |
 
 ## Editing
-1. Edit the HTML files directly; text is plain and easy to find.
-2. Preview by opening `index.html` in a browser.
-3. Commit and push to `main`; GitHub Pages redeploys automatically.
 
-Keep text limited to work that has actually been completed. Update the bond project's status when it changes.
+1. Edit the HTML directly. Each section is labelled and the text is plain.
+2. Preview locally by opening `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
+3. Commit and push to `main`. GitHub Pages republishes automatically within a minute or two.
+
+To add a project, copy one `<article class="project">` block in `index.html` and one case-study page in `projects/`, then update the links.
