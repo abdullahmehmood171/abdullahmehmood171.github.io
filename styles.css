@@ -283,6 +283,13 @@ a:hover { color: var(--emerald-dark); text-decoration-thickness: 2px; }
 .results tbody th { font-weight: 500; }
 .results tbody tr:hover { background: #f7f3e9; }
 .table-notes { font-size: .88rem; color: var(--muted); }
+.results-compact { min-width: 0; }
+.results-compact th, .results-compact td { padding: .55rem .7rem; }
+.results-compact th { white-space: normal; }
+@media (max-width: 480px) { .results-compact { font-size: .86rem; } .results-compact th, .results-compact td { padding: .5rem .55rem; } }
+.findings-list { padding-left: 1.3rem; margin: 0 0 1.5rem; }
+.findings-list li { margin: .6rem 0; padding-left: .25rem; }
+.findings-list li::marker { color: var(--emerald); font-weight: 700; }
 .table-notes li { margin: .25rem 0; }
 
 /* Download */

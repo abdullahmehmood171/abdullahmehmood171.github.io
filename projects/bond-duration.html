@@ -57,6 +57,7 @@
         <li><a href="#work">Work completed</a></li>
         <li><a href="#method">Scope and methodology</a></li>
         <li><a href="#results">Results</a></li>
+        <li><a href="#findings">Findings</a></li>
         <li><a href="#resource">Workbook</a></li>
         <li><a href="#ai-use">AI-use disclosure</a></li>
         <li><a href="#status">Status</a></li>
@@ -72,13 +73,9 @@
       <section class="case-section" id="work" aria-labelledby="work-h">
         <h2 id="work-h">Work completed</h2>
         <h3>Original work (summer 2026)</h3>
-        <ul>
-          <li>Set up an Excel sheet covering Treasuries and corporate bonds.</li>
-          <li>Calculated duration for each bond.</li>
-          <li>Applied simple +100 and −100 basis-point interest-rate shocks to estimate price changes.</li>
-        </ul>
-        <h3>Corrected workbook</h3>
-        <p>A separate workbook develops this into a synthetic-data learning exercise with hypothetical inputs for eight bonds. AI assisted with its formula corrections and with completing the scenarios, including exact repricing comparisons.</p>
+        <p>I began a self-study Excel analysis of Treasuries and corporate bonds, calculated duration, and attempted ±100-basis-point rate scenarios.</p>
+        <h3>Corrected synthetic exercise</h3>
+        <p>AI later helped correct and complete the published exercise, which uses hypothetical inputs for eight bonds and adds exact repricing comparisons.</p>
       </section>
 
       <section class="case-section" id="method" aria-labelledby="method-h">
@@ -129,7 +126,35 @@
             </tbody>
           </table>
         </div>
-        <p class="table-notes">In every example, the duration estimate overstates the loss when yields rise and understates the gain when yields fall. The gap, the effect of convexity, is widest for the 30-year bond. Values are rounded to two decimals.</p>
+        <p class="table-notes">Values are rounded to two decimals.</p>
+      </section>
+
+      <section class="case-section" id="findings" aria-labelledby="findings-h">
+        <h2 id="findings-h">Findings</h2>
+        <span class="label-note">From the synthetic workbook · verified with AI assistance</span>
+        <ol class="findings-list">
+          <li><strong>Direction.</strong> All eight synthetic examples fall in price when yields rise and rise when yields fall.</li>
+          <li><strong>Sensitivity.</strong> The UST 30Y example has the highest modified duration (16.0751 years) and is the most sensitive in proportional terms: about −14.4% at +100 bp and +18.2% at −100 bp, based on exact repricing.</li>
+          <li><strong>Linear estimate vs exact repricing.</strong> Duration is a linear approximation, but the price–yield relationship is curved (convexity). For the UST 30Y, exact repricing gives a smaller loss and a larger gain than the duration estimate.</li>
+        </ol>
+        <p class="table-title" id="ust30-caption"><strong>Synthetic UST 30Y: duration estimate vs exact repricing</strong>Clean prices in dollars per $100 face value. Base clean price: $97.5864.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="ust30-caption">
+          <table class="results results-compact" aria-labelledby="ust30-caption">
+            <thead>
+              <tr>
+                <th scope="col">Clean price</th>
+                <th scope="col">Yield +100 bp</th>
+                <th scope="col">Yield −100 bp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Duration estimate</th><td>$81.8069</td><td>$113.3659</td></tr>
+              <tr><th scope="row">Exact repricing</th><td>$83.4932</td><td>$115.3794</td></tr>
+              <tr><th scope="row">Change, estimate</th><td>−$15.78</td><td>+$15.78</td></tr>
+              <tr><th scope="row">Change, exact</th><td>−$14.09</td><td>+$17.79</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="case-section" id="resource" aria-labelledby="resource-h">
