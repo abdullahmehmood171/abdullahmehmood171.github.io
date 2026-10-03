@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bond Duration &amp; Interest-Rate Analysis | Abdullah Mehmood Khichi</title>
-<meta name="description" content="Case study: an in-progress Excel self-study on how Treasury and corporate bond prices respond to interest-rate changes.">
+<meta name="description" content="Case study: an in-progress Excel self-study on how Treasury and corporate bond prices respond to interest-rate changes, with a corrected synthetic-data workbook.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -37,13 +37,13 @@
           <li aria-current="page">Bond Duration &amp; Interest-Rate Analysis</li>
         </ol>
       </nav>
-      <p class="status status-progress">In progress · Self-study</p>
+      <p class="status status-progress">In progress · Pending review</p>
       <h1>Bond Duration &amp; Interest-Rate Analysis</h1>
       <p class="case-lede">An Excel-based self-study analysis exploring how Treasury and corporate bond prices respond to interest-rate changes through duration calculations and ±100-basis-point scenarios.</p>
       <dl class="facts">
-        <div><dt>Type</dt><dd>Independent self-study</dd></div>
+        <div><dt>Type</dt><dd>Self-study, synthetic-data exercise</dd></div>
         <div><dt>Started</dt><dd>Summer 2026</dd></div>
-        <div><dt>Status</dt><dd>In progress</dd></div>
+        <div><dt>Status</dt><dd>In progress, pending my review</dd></div>
         <div><dt>Tool</dt><dd>Microsoft Excel</dd></div>
       </dl>
     </div>
@@ -55,54 +55,122 @@
       <ol>
         <li><a href="#objective">Objective</a></li>
         <li><a href="#work">Work completed so far</a></li>
-        <li><a href="#workflow">Analysis workflow</a></li>
+        <li><a href="#method">Scope and methodology</a></li>
+        <li><a href="#results">Synthetic examples</a></li>
+        <li><a href="#resource">Project resource</a></li>
         <li><a href="#tools">Tools</a></li>
-        <li><a href="#status">Status and next steps</a></li>
+        <li><a href="#ai-use">AI-use disclosure</a></li>
+        <li><a href="#status">Current status</a></li>
       </ol>
     </nav>
 
     <div class="case-content">
       <section class="case-section" id="objective" aria-labelledby="objective-h">
         <h2 id="objective-h">Objective</h2>
-        <p>I started this project to build a practical understanding of interest-rate risk: how much bond prices move when rates change, and how that sensitivity differs across Treasuries and corporate bonds. Duration is the core measure I am using to study it.</p>
+        <p>I started this project to build a practical understanding of interest-rate risk: how much bond prices move when rates change, and how that sensitivity differs across Treasuries and corporate bonds. Duration is the core measure used to study it.</p>
       </section>
 
       <section class="case-section" id="work" aria-labelledby="work-h">
         <h2 id="work-h">Work completed so far</h2>
+        <h3>My original work (summer 2026)</h3>
         <ul>
           <li>Set up an Excel sheet covering Treasuries and corporate bonds.</li>
           <li>Calculated duration for each bond.</li>
           <li>Applied simple +100 and −100 basis-point interest-rate shocks to estimate price changes.</li>
         </ul>
+        <p>That original workbook is not published here.</p>
+        <h3>Corrected workbook (AI-assisted, October 2026)</h3>
+        <p>A separate, corrected workbook was prepared with AI assistance as a learning exercise. It uses synthetic inputs for eight hypothetical bonds, corrects the duration calculations, and completes the ±100-basis-point scenarios with exact repricing comparisons. It is not my original summer workbook, and its inputs are not historical market observations.</p>
       </section>
 
-      <section class="case-section" id="workflow" aria-labelledby="workflow-h">
-        <h2 id="workflow-h">Analysis workflow</h2>
-        <p>The analysis follows four steps, from the bonds in the sheet to an estimated price change under each rate scenario.</p>
+      <section class="case-section" id="method" aria-labelledby="method-h">
+        <h2 id="method-h">Scope and methodology</h2>
+        <p>The corrected workbook covers eight hypothetical fixed-coupon bonds: five Treasury-style bonds (2-, 5-, 7-, 10- and 30-year) and three hypothetical corporate bonds (two A-rated, one BBB). All inputs are synthetic, priced to a settlement date of 1 October 2026.</p>
+        <ul>
+          <li><strong>Pricing:</strong> Excel's <code>PRICE</code> function, $100 face value, semiannual coupons, and the US 30/360 day count. The day count is a simplification and not a claim about actual Treasury market conventions.</li>
+          <li><strong>Duration:</strong> Macaulay duration from the timing of discounted cash flows, adjusted for settlement between coupon dates. Modified duration = Macaulay duration ÷ (1 + yield ÷ 2).</li>
+          <li><strong>Duration estimate:</strong> price change ≈ −modified duration × change in yield × dirty price (clean price plus accrued interest).</li>
+          <li><strong>Exact repricing:</strong> each bond is repriced at the shocked yield with <code>PRICE</code>, so the estimate can be compared with the exact result.</li>
+          <li><strong>Limits:</strong> the duration estimate ignores convexity. Corporate yield shocks do not model credit spreads or default separately, and no portfolio weights are used.</li>
+        </ul>
         <figure class="diagram">
           <ol class="flow flow-wide">
-            <li><div><strong>Bond inputs</strong><span>Treasuries and corporate bonds in Excel</span></div></li>
-            <li><div><strong>Duration</strong><span>Calculated for each bond</span></div></li>
-            <li><div><strong>Rate scenarios</strong><span>+100 bp and −100 bp shocks</span></div></li>
-            <li><div><strong>Estimated price change</strong><span>For each bond under each scenario</span></div></li>
+            <li><div><strong>Bond inputs</strong><span>Coupon, maturity and yield for eight synthetic bonds</span></div></li>
+            <li><div><strong>Duration</strong><span>Macaulay, then modified duration</span></div></li>
+            <li><div><strong>Rate scenarios</strong><span>+100 bp and −100 bp yield shocks</span></div></li>
+            <li><div><strong>Price change</strong><span>Duration estimate compared with exact repricing</span></div></li>
           </ol>
-          <figcaption>Process outline drawn for this page. It does not show holdings or results.</figcaption>
+          <figcaption>Process outline of the corrected workbook.</figcaption>
         </figure>
+      </section>
+
+      <section class="case-section" id="results" aria-labelledby="results-h">
+        <h2 id="results-h">Synthetic examples</h2>
+        <span class="label-note">Synthetic examples · not market data</span>
+        <p class="table-title" id="results-caption"><strong>Price change under ±100-basis-point yield shocks</strong>Synthetic examples from the corrected workbook. Change in clean price, in dollars per $100 face value.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="results-caption">
+          <table class="results" aria-labelledby="results-caption">
+            <thead>
+              <tr>
+                <th scope="col">Bond (hypothetical)</th>
+                <th scope="col">Modified duration (yrs)</th>
+                <th scope="col">+100 bp: estimate</th>
+                <th scope="col">+100 bp: exact</th>
+                <th scope="col">−100 bp: estimate</th>
+                <th scope="col">−100 bp: exact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Treasury 2Y</th><td>1.90</td><td>−1.91</td><td>−1.89</td><td>+1.91</td><td>+1.93</td></tr>
+              <tr><th scope="row">Treasury 5Y</th><td>4.51</td><td>−4.48</td><td>−4.37</td><td>+4.48</td><td>+4.60</td></tr>
+              <tr><th scope="row">Treasury 7Y</th><td>6.05</td><td>−6.03</td><td>−5.82</td><td>+6.03</td><td>+6.25</td></tr>
+              <tr><th scope="row">Treasury 10Y</th><td>7.96</td><td>−8.03</td><td>−7.67</td><td>+8.03</td><td>+8.43</td></tr>
+              <tr><th scope="row">Treasury 30Y</th><td>16.08</td><td>−15.78</td><td>−14.09</td><td>+15.78</td><td>+17.79</td></tr>
+              <tr><th scope="row">Corp A (A-rated)</th><td>4.09</td><td>−4.13</td><td>−4.03</td><td>+4.13</td><td>+4.23</td></tr>
+              <tr><th scope="row">Corp B (BBB)</th><td>5.97</td><td>−5.87</td><td>−5.67</td><td>+5.87</td><td>+6.09</td></tr>
+              <tr><th scope="row">Corp C (A-rated)</th><td>2.82</td><td>−2.88</td><td>−2.83</td><td>+2.88</td><td>+2.93</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="table-notes">
+          <li>Values are rounded to two decimals. Exact changes are the workbook's exact shocked clean prices minus the base clean price.</li>
+          <li>In every example, the duration estimate overstates the loss when yields rise and understates the gain when yields fall. The gap is widest for the 30-year bond, the effect of convexity.</li>
+        </ul>
+      </section>
+
+      <section class="case-section" id="resource" aria-labelledby="resource-h">
+        <h2 id="resource-h">Project resource</h2>
+        <div class="download-card">
+          <span class="download-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5 12 15.5l5-5M5 20h14"/></svg></span>
+          <div>
+            <a href="../downloads/bond_duration_reviewed.xlsx" download>Download the corrected workbook (synthetic data)</a>
+            <p>Excel file (.xlsx, 11 KB). AI-assisted corrections; not my original summer 2026 workbook.</p>
+          </div>
+        </div>
       </section>
 
       <section class="case-section" id="tools" aria-labelledby="tools-h">
         <h2 id="tools-h">Tools</h2>
         <ul>
-          <li><strong>Microsoft Excel</strong> for the bond sheet, duration calculations, and rate scenarios.</li>
-          <li><strong>Concepts:</strong> bond duration, basis-point rate shocks, and interest-rate sensitivity.</li>
+          <li><strong>Microsoft Excel.</strong> The corrected workbook uses the <code>PRICE</code>, <code>COUPNUM</code>, <code>COUPDAYBS</code> and <code>COUPDAYS</code> functions alongside its duration and scenario formulas.</li>
+          <li><strong>Concepts covered:</strong> Macaulay and modified duration, basis-point yield shocks, accrued interest, and convexity.</li>
+        </ul>
+      </section>
+
+      <section class="case-section" id="ai-use" aria-labelledby="ai-use-h">
+        <h2 id="ai-use-h">AI-use disclosure</h2>
+        <ul>
+          <li><strong>Website development:</strong> the design and code of this website were produced with AI assistance (Anthropic's Claude).</li>
+          <li><strong>Text editing:</strong> the website text was drafted and edited with AI assistance, based on information about my work.</li>
+          <li><strong>Workbook corrections:</strong> the corrected workbook's duration formulas, completed ±100-basis-point scenarios, and exact repricing comparisons were prepared with AI assistance using synthetic data.</li>
         </ul>
       </section>
 
       <section class="case-section" id="status" aria-labelledby="status-h">
-        <h2 id="status-h">Current status and next steps</h2>
+        <h2 id="status-h">Current status</h2>
         <div class="status-panel">
-          <p><strong>In progress.</strong> The duration calculations and ±100-basis-point scenarios for Treasuries and corporate bonds are set up. The broader project is unfinished: planned extensions to mortgage-backed securities (MBS) and credit stress testing were not completed.</p>
-          <p>Next, I plan to finalize and document the Treasury and corporate-bond analysis, then add its methodology and results to this page.</p>
+          <p><strong>In progress, pending review.</strong> I have not yet reviewed the corrected workbook. This project will be marked complete only after I have reviewed and confirmed it.</p>
+          <p>Mortgage-backed securities (MBS) analysis and credit stress testing were not completed and are outside this exercise's scope.</p>
         </div>
       </section>
 
@@ -121,6 +189,7 @@
       <li><a href="https://github.com/abdullahmehmood171">GitHub profile</a></li>
       <li><a href="https://github.com/abdullahmehmood171/abdullahmehmood171.github.io">Website source</a></li>
     </ul>
+    <p class="footer-ai">This website was built with AI assistance. <a href="#ai-use">Read the AI-use disclosure</a>.</p>
   </div>
 </footer>
 </body>

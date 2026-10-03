@@ -2,6 +2,8 @@
 
 Personal portfolio website, built with plain HTML and CSS (no framework, no build step, no JavaScript) and hosted on GitHub Pages.
 
+Parts of this website and the corrected bond workbook were produced with AI assistance; see the AI-use disclosure on the bond case-study page.
+
 **Live site:** https://abdullahmehmood171.github.io
 
 ## Structure
@@ -13,6 +15,7 @@ Personal portfolio website, built with plain HTML and CSS (no framework, no buil
 | `projects/triptic.html` | Triptic case study |
 | `styles.css` | All styling; colors and widths are variables at the top |
 | `favicon.svg` | AMK monogram icon |
+| `downloads/bond_duration_reviewed.xlsx` | Corrected bond workbook (synthetic data, AI-assisted corrections) |
 
 ## Editing
 
